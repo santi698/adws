@@ -1,0 +1,31 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix example: <http://example.me/#>
+
+
+
+<http://example.me/>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker example:socamica ;
+  foaf:primaryTopic example:socamica ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+example:socamica
+  a foaf:Person ;
+  foaf:name "Santiago Ocamica" ;
+  foaf:title "Sr" ;
+  foaf:givenname "Santiago" ;
+  foaf:family_name "Ocamica" ;
+  foaf:mbox_sha1sum "e27b20b262bed916655017c9442a7b7b940044e7" ;
+  foaf:phone <tel:2323361083> ;
+  foaf:nick "santi698";
+  foaf:interest <http://www.fsf.org> ;
+  foaf:birthday "02-10";
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Sebastián Maio" ;
+    foaf:mbox_sha1sum "6242d9f09d40537c5c740232937e5710f18d5670" ;
+    rdfs:seeAlso example:smaio
+  ] .
